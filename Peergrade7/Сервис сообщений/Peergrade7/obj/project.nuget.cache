@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "dzeklD8ZyIZ3Opl1KpbqBZE5lQcn/mnlTho/dJBPuLdIGHzrmKTZH8CQwD46S4yhU7ykEY80BwJld9AmW/KiwA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\2003k\\Downloads\\17206338275964\\Peergrade7\\Peergrade7\\Peergrade7.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\2003k\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\2003k\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\2003k\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\2003k\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\2003k\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\2003k\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

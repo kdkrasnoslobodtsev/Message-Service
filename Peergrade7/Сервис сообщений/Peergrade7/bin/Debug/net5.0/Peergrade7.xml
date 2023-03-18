@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Peergrade7</name>
+    </assembly>
+    <members>
+        <member name="M:Peergrade7.Controllers.PostController.FindMessages(System.String,System.String)">
+            <summary>
+            Находит сообщение по заданному отправителю и получателю.
+            </summary>
+            <param name="sender">Идентификатор отправителя</param>
+            <param name="receiver">Идентификатор получателя</param>
+            <returns>Результат запроса</returns>
+        </member>
+        <member name="M:Peergrade7.Controllers.PostController.FindMessagesBySender(System.String)">
+            <summary>
+            Находит сообщения по заданному отправителю.
+            </summary>
+            <param name="sender">Идентификатор отправителя</param>
+            <returns>Результат запроса</returns>
+        </member>
+        <member name="M:Peergrade7.Controllers.PostController.FindMessagesByReceiver(System.String)">
+            <summary>
+            Находит сообщения по заданному получателю.
+            </summary>
+            <param name="receiver">Идентификатор получателя</param>
+            <returns>Результат запроса</returns>
+        </member>
+        <member name="M:Peergrade7.Controllers.PostController.CreateMessage(System.String,System.String,System.String,System.String)">
+            <summary>
+            Создать сообщение.
+            </summary>
+            <param name="subject">Тема</param>
+            <param name="message">Содержание</param>
+            <param name="sender">Идентификатор отправителя</param>
+            <param name="receiver">Идентификатор получателя</param>
+            <returns>Результат запроса</returns>
+        </member>
+        <member name="M:Peergrade7.Controllers.UserController.CreateUsers">
+            <summary>
+            Случайным образом создает пользователей и сообщения.
+            </summary>
+            <returns>Результат запроса</returns>
+        </member>
+        <member name="M:Peergrade7.Controllers.UserController.FindUser(System.String)">
+            <summary>
+            Находит пользователя с заданным Email.
+            </summary>
+            <param name="email">Идентификатор для поиска</param>
+            <returns>Результат запроса</returns>
+        </member>
+        <member name="M:Peergrade7.Controllers.UserController.ShowUsers">
+            <summary>
+            Вывод вссех пользователей.
+            </summary>
+            <returns>Результат запроса</returns>
+        </member>
+        <member name="M:Peergrade7.Controllers.UserController.CreateUser(System.String,System.String)">
+            <summary>
+            Добавить пользователя.
+            </summary>
+            <param name="userName">Имя пользователя</param>
+            <param name="email">Почта пользователя</param>
+            <returns>Результат запроса</returns>
+        </member>
+        <member name="P:Peergrade7.Models.Post.Subject">
+            <summary>
+            Тема сообщения.
+            </summary>
+        </member>
+        <member name="P:Peergrade7.Models.Post.Message">
+            <summary>
+            Текст сообщения.
+            </summary>
+        </member>
+        <member name="P:Peergrade7.Models.Post.SenderId">
+            <summary>
+            Отправитель сообщения.
+            </summary>
+        </member>
+        <member name="P:Peergrade7.Models.Post.ReceiverId">
+            <summary>
+            Получтель сообщения.
+            </summary>
+        </member>
+        <member name="M:Peergrade7.Models.Post.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Конструктор с 4 параметрами.
+            </summary>
+            <param name="subject">Тема</param>
+            <param name="message">Текст</param>
+            <param name="sender">Отправитель</param>
+            <param name="receiver">Получатель</param>
+        </member>
+        <member name="P:Peergrade7.Models.User.UserName">
+            <summary>
+            Имя пользователя.
+            </summary>
+        </member>
+        <member name="P:Peergrade7.Models.User.Email">
+            <summary>
+            Идентификатор пользователя.
+            </summary>
+        </member>
+        <member name="M:Peergrade7.Models.User.#ctor(System.String,System.String)">
+            <summary>
+            Конструктор с двумя параметрами
+            </summary>
+            <param name="userName">Имя</param>
+            <param name="email">Идентификатор</param>
+        </member>
+        <member name="M:Peergrade7.Tools.RandomString(System.Int32)">
+            <summary>
+            Создать строку случайным образом.
+            </summary>
+            <param name="length">Длина строки</param>
+            <returns>Сгенерированная строка</returns>
+        </member>
+        <member name="M:Peergrade7.Tools.GenerateUsers">
+            <summary>
+            Случайная генерация списка пользователей.
+            </summary>
+            <returns>Сгенерированный списко</returns>
+        </member>
+        <member name="M:Peergrade7.Tools.GenerateMessages(System.Collections.Generic.List{Peergrade7.Models.User})">
+            <summary>
+            Случайна генерация списка сообщений.
+            </summary>
+            <param name="users">Список пользователей</param>
+            <returns>Сгенерированный список сообщений</returns>
+        </member>
+        <member name="M:Peergrade7.Tools.OpenUsers">
+            <summary>
+            Читает список пользователей из JSON-файла.
+            </summary>
+            <returns>Список пользователей</returns>
+        </member>
+        <member name="M:Peergrade7.Tools.OpenMessages">
+            <summary>
+            Читает список сообщений из JSON-файла.
+            </summary>
+            <returns>Список сообщений</returns>
+        </member>
+        <member name="M:Peergrade7.Tools.WriteUsers(System.Collections.Generic.List{Peergrade7.Models.User})">
+            <summary>
+            Записывает список пользователей в JSON-файл.
+            </summary>
+            <param name="users">Список пользователей</param>
+        </member>
+        <member name="M:Peergrade7.Tools.WriteMessages(System.Collections.Generic.List{Peergrade7.Models.Post})">
+            <summary>
+            Записывает список сообщений в JSON-файл.
+            </summary>
+            <param name="posts">Список сообщений</param>
+        </member>
+    </members>
+</doc>
